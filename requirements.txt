@@ -1,0 +1,13 @@
+argparse==1.4.*
+pytimeparse==1.1.*
+requests==2.23.*
+prometheus_client==0.7.*
+psycopg2==2.8.*
+git+https://github.com/cryptobioz/addok@monitoring
+git+https://github.com/cryptobioz/addok-psql-store@monitoring
+pgcopy
+addok-fr==1.0.1
+addok-france==1.1.0
+addok-csv==1.0.1
+addok-trigrams==1.1.1
+PyYAML==5.3.*
