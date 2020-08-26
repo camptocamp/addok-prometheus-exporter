@@ -6,6 +6,7 @@ from prometheus_client import core, exposition, Counter, Histogram
 from addok.config import config
 from addok.http import View, log_notfound, log_query
 from addok.ds import DS
+from addok.db import DB
 
 def register_http_middleware(middlewares):
     middlewares.append(MultipartMiddleware())
@@ -48,5 +49,6 @@ class MetricsHandler():
     def _gather_metrics(self):
         try:
             DS.metrics()
+            DB.metrics()
         except AttributeError:
             pass
